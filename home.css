@@ -1,0 +1,46 @@
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #648b57;
+   }
+   
+   /* Style the logo */
+   .logo {
+    font-size: 24px;
+    font-weight: bold;
+   }
+
+   img{
+    border-radius: 50%;
+   }
+
+   button{
+    padding:15px;
+    border-radius: 20%;
+   }
+   
+   /* Style the navigation buttons */
+   .header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+   }
+   
+   /* Responsive layout - when the screen is less than 600px wide, make the links stack vertically instead of horizontally */
+   @media screen and (max-width: 600px) {
+    .header {
+      flex-direction: column;
+    }
+   
+    .header-right {
+      margin-top: 20px;
+    }
+   
+    .header-right a {
+      margin-left: 0;
+      display: block;
+    }
+   }
