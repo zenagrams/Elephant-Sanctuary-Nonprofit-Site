@@ -5,40 +5,65 @@
     align-items: center;
     padding: 20px;
     background-color: #648b57;
-   }
-   
+}
+
    /* Style the logo */
-   .logo {
-    font-size: 24px;
-    font-weight: bold;
-   }
+img{
+    border-radius: 50%; 
+  }
 
-   img{
-    border-radius: 50%;
-   }
-
-   button{
+button{
     padding:15px;
     border-radius: 20%;
-   }
-   
+}
+button a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+button:hover a{
+  color:#228B22;
+}
+
    /* Style the navigation buttons */
-   .header-right a {
+.header-right a {
     margin-left: 20px;
     text-decoration: none;
     color: black;
-   }
-   
+} 
+/* footer style*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color:white;
+  font-size: 14px;
+}
+footer ul {
+  display: flex;
+}
+  footer li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+footer li:hover a{
+    color: #228B22;
+  }
+footer li a {
+    font-size: 14px;
+    color:white;
+    text-decoration: none;
+  }
    /* Responsive layout - when the screen is less than 600px wide, make the links stack vertically instead of horizontally */
-   @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .header {
       flex-direction: column;
     }
-   
+
     .header-right {
       margin-top: 20px;
     }
-   
     .header-right a {
       margin-left: 0;
       display: block;
