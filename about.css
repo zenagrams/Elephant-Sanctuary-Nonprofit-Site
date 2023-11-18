@@ -6,3 +6,11 @@
     padding: 20px;
     background-color: #648b57;
    }
+   h2 {
+    font-weight:300;
+    color:#404969;
+    display: grid;
+    text-align: center;
+    font-size: 50px
+
+}

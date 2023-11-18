@@ -4,20 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
     <header>
-        <!-- Add your header content here --> 
-        <h1> "About Elephants Hi"</h1>
-
+        <div class="header">
+            <button><a class="active" href="home.html">Home</a></button>
+            <button><a href="about.html">About</a></button>
+            <img src="logo.jpg" alt="logo" width="200px" height="auto">
+            <button><a href="learn.html">Learn</a></button>
+            <button><a href="donate.html">Donate</a></button>
+        </div>
     </header>
     <main>
         <!-- Add your main content here -->
-        <h2> </h2>
+        <h1> "Our Mission for Elephants"</h1>
+        
+        <div class="methods">
+                <form method="form">
+                <div>
+                    <h2 class="contact">CONTACT</h2>
+                    <p id="contact-content"> Please fill in your information below:</p>
+                </div>
+                <label for="fullname">Full Name: <br> </label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your full name..">
+           
+            </br>
+        
+            <br></br>
+                <label for="email-address">Email Address:<br></label>
+                <input type="text" id="email-address" name="email-address"/>
+            <br/>
+        
+            <br></br>
+                <label for="message">Message:<br></label>
+                <input type="text" id="message" name="message"/>
+            <br/>
+        
+            
+            <input type='submit' value='submit'>
+        
+        </div>
     </main>
     <footer>
         <!-- Add your footer content here -->
+        <p>Copyright © 2023. All Rights Reserved</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </footer>
     <!-- <script src="jsfilehere"></script> -->
 </body>

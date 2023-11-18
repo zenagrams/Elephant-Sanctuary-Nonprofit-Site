@@ -4,22 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="donate.css">
 </head>
 <body>
     <header>
-        <h1>Donate Here</h1> </h1>
-        <!--roselynn was heree -->
-        <!-- Add your header content here -->
+        <div class="header">
+            <button><a class="active" href="home.html">Home</a></button>
+            <button><a href="about.html">About</a></button>
+            <img src="logo.jpg" alt="logo" width="200px" height="auto">
+            <button><a href="learn.html">Learn</a></button>
+            <button><a href="donate.html">Donate</a></button>
+        </div>
     </header>
     <main>
+        <!--facts section-->
+
+        <!--working on adding images-->
+        <img src="elephantp1.jpg" alt= "fact1"> 
+        <h3>insert fact 1 </h3> 
+
+        <img src="elephantp2.jpg" alt="fact2">
+        <h3>insert fact 2 </h3> 
+
+        <img src="elephantp3.jpg" alt="fact3">
+        <h3>insert fact 3 </h3> 
+
+        <img src="elephant4.jpg" alt="fact4">
+        <h3>insert fact 4 </h3> 
+
+        
         <!-- Add your main content here -->
+        <form id="userForm">
+            <h2> DONATION INFORMATION </h2>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="cpassword">Confirm Password:</label><br>
+            <input type="password" id="cpassword" name="cpassword"><br>
+            </div>
+            <h3>Please select donation type:</h3>
+            <input type="button" value="Select Amount" onclick="Increment()" >
+            <input type="button" value="Custom Amount" onclick="Custom()" >
+            <input type="button" value="Monthly Donation" onclick="Monthly()" ><br>
+            <input type="submit" value="Submit">
+            </form>
+    <div id="payment-information">
+            <form>
+                <h2> PAYMENT </h2>
+                <!--credit card and debit card info-->
+                <button type="button">Credit/Debit Card</button>
+
+                <label for="cardNumber"> Card Number:</label>
+                <input type="text" id="cardNumber" name="Card Number" placeholder="Enter Card Number Information" required>
+
+                <label for="CVC">CVC:</label>
+                <input type="text" id="CVC" name="CVC" placeholder="Type CVC" required>
+                
+                <input type="button" value="Submit">
+                
+                <!-- Pay pal info-->
+                <button type="button">PayPal </button>
+                <input type="checkbox" id="security1" name="
+                security1" value="safe">
+                <label for="security1"> Save this information securely </label>
+                
+                <input type="button" value="Confirm">
+
+            </form>
+        </div>
     </main>
     <footer>
         <!-- Add your footer content here -->
+        <p>Copyright © 2023. All Rights Reserved</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </footer>
    
-    <!-- <script src="jsfilehere"></script> -->
+    <script src="donate.js"></script>
+    
 </body>
 <link>
 </html>
