@@ -1,7 +1,16 @@
 *{
   font-family:Arial, Helvetica, sans-serif;
 }
-
+html,body{
+  height:100%;
+}
+body{
+  display:flex;
+  flex-direction: column;
+}
+main{
+  flex-grow:1;
+}
 /* Style the header */
 .header {
     display: flex;
@@ -31,24 +40,49 @@ button:hover a{
   color:#228B22;
 }
 /* Style the form*/
+
 form {
   width: 100%;
-  max-width: 500px;
-  margin: 2rem;
-  background-color: #ffffff;
-  padding: 4rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 label {
-  display: block;
-  margin-bottom: 10px;
   color: black;
+}
+
+.methods{
+  display: grid;
+  padding: 4rem;
+  margin:2rem auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.1);
+}
+#box1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center;
+}
+
+#box2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-box{
+  display:flex;
+  flex-direction: row;
+  margin: 10px 15px;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
   width: 100%;
+  max-width:400px;
   padding: 10px;
   margin-bottom: 20px;
   border: 2px solid #228B22;
@@ -70,7 +104,7 @@ input[type="button"]:hover {
 }
 
 input[type="submit"] {
-  margin:0.5rem 0rem;
+  margin:0.8rem 0.8rem;
   padding:.5rem 0.5rem;
   background-color: black;
   color: white;
@@ -114,6 +148,7 @@ footer li a {
     color:white;
     text-decoration: none;
   }
+
    /* Responsive layout - when the screen is less than 600px wide, make the links stack vertically instead of horizontally */
 @media screen and (max-width: 600px) {
     .header {
@@ -127,4 +162,4 @@ footer li a {
       margin-left: 0;
       display: block;
     }
-   }
+}
