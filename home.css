@@ -18,7 +18,55 @@ main{
     align-items: center;
     padding: 1rem;
     background-color: #648b57;
+    opacity: 80%;
 }
+  /* Style the Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.hero-title {
+    position: relative;
+    z-index: 1;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    max-width:480px;
+    padding:2rem;
+    background-color: #648b57;
+    opacity: 90%;
+    border-radius: 10px;
+  }
+
+.favicons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 2rem;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: #648b57;
+    opacity: 80%;
+    padding:0.5rem;
+    border-radius: 10px;
+}
+
 
    /* Style the logo */
 img{
