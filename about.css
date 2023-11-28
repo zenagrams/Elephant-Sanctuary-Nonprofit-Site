@@ -5,16 +5,33 @@
     align-items: center;
     padding: 20px;
     background-color: #648b57;
-   }
-   h2 {
+}
+h2 {
     font-weight:300;
     color:#404969;
     display: grid;
     text-align: center;
-    font-size: 50px
+    font-size: 50px;
 
 }
 
-form{
+.methods{
     max-width:500px;
+    padding: 20px;
+    font-size: 30px;
+    text-align:center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.grid-item {
+    background-color: #648b57;
+    padding: 20px;
+    font-size: 100px;
+    text-align: center;    
+
 }

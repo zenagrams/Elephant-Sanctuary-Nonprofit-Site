@@ -69,7 +69,7 @@ video{
 
 
    /* Style the logo */
-img{
+#logo-img{
     border-radius: 50%; 
   }
 
@@ -87,6 +87,29 @@ button a{
 button:hover a{
   color:#228B22;
 }
+
+#license-title{
+  margin:5rem 5rem;
+  text-align: center;
+}
+
+.license-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.license-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc(25% - 20px);
+  margin: 10px;
+}
+
+
 /* Style the form*/
 
 form {
