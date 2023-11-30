@@ -6,32 +6,110 @@
     padding: 20px;
     background-color: #648b57;
 }
-h2 {
-    font-weight:300;
-    color:#404969;
+
+h1, h2{
+    font-size: 2rem;
+    text-align: left;
+    padding:1rem 1rem;
+}
+
+li{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+ul{
+    padding:.5rem 8rem;
+}
+
+p{
+    font-size: 1.5rem;
+    margin-right: 17rem;
+    line-height: 1.7em;
+}
+
+.about-hero{
+    background-image: url(/assets/about-hero.png);
+    display:flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-position: center;
+    background-size: cover;
+    min-height: 360px;
+    justify-content:center;
+    align-items: center;
+}
+
+.hero-title{
+    padding:2rem 2rem;
+    margin:0;
+    background-color: #272e25;
+    color: white;
+}
+.mission {
     display: grid;
-    text-align: center;
-    font-size: 50px;
+    grid-template-columns: 1fr;
+}
+.mission-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-around;
+    gap: 20px;
+    padding:1rem 5rem;
+}
+
+.underline{
+    border-top: 1px solid #000;
+    width: 60%;
+    margin: 1rem 4rem;
 
 }
 
 .methods{
     max-width:500px;
-    padding: 20px;
-    font-size: 30px;
-    text-align:center;
+    padding: 2rem;
+    text-align:left;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box h2 {
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.box button {
+    display:block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    background-color:#648b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: #000;
 }
 
-.grid-item {
-    background-color: #648b57;
-    padding: 20px;
-    font-size: 100px;
-    text-align: center;    
-
+#box1{
+    background-image: url(/assets/elephantcare.jpg);
+}
+#box2{
+    background-image: url(/assets/virtuallearning.jpg);
+}
+#box3{
+    background-image: url(/assets/discoverycenter.jpg);
+}
+#contact-content{
+    margin-right: 0;
 }
