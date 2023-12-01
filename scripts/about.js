@@ -1,14 +1,14 @@
-let newsletterform = document.getElementById("newsletterform");
+let contactform = document.getElementById("contactform");
 
-newsletterform.addEventListener("submit", (e) => {
+contactform.addEventListener("submit", (e) => {
 e.preventDefault();
-let firstname = document.getElementById("first-name");
-let lastname = document.getElementById("last-name");
+let fullname = document.getElementById("fullname");
 let email = document.getElementById("email-address");
+let message = document.getElementById("message");
 let emailRegex = /\S+@\S+\.\S+/;
 
-if (firstname.value.length <= 2 ||lastname.value.length <= 2 ) {
-    document.getElementById("alertMessage").innerText = "Error: Please include more than 2 characters";
+if (fullname.value=="") {
+    document.getElementById("alertMessage").innerText = "Error: Do not leave empty";
     document.getElementById("customAlert").style.display = "block";
 }else if(!emailRegex.test(email.value)){
     document.getElementById("alertMessage").innerText = "Error:Enter a valid email address";
@@ -17,10 +17,10 @@ if (firstname.value.length <= 2 ||lastname.value.length <= 2 ) {
     document.getElementById("alertMessage").innerText = "This form has been successfully submitted!";
     document.getElementById("customAlert").style.display = "block";
     console.log(
-        `This form has a name of ${firstname.value} ${lastname.value} and email of ${email.value}`
+        `This form has a name of ${fullname.value} , email of ${email.value} and a message of ${message.value}`
     );
-    firstname.value = "";
-    lastname.value = "";
+    fullname.value = "";
+    message.value = "";
     email.value = "";
 }
 });

@@ -71,6 +71,17 @@ p{
     text-align:left;
 }
 
+#customAlert{
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin:0 0;
+    padding-left: 15px;
+    width:80%;
+    text-wrap:nowrap;
+    box-sizing: border-box;
+}
+
 .box-container {
     display: flex;
     justify-content: space-between;

@@ -221,6 +221,19 @@ input[type="submit"]:hover {
   color:white
 }
 
+#customAlert{
+  display: none;
+  position: relative;
+  top: 0;
+  margin-left: 7rem;
+  width: 80%;
+  height: 10%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 @media (max-width: 600px) {
   form {
       width: 100%;

@@ -69,7 +69,7 @@
 
         </div>
         <div class="methods">
-                <form method="form">
+                <form method="form" id="contactform">
                 <div>
                     <h2 class="contact">Contact Us</h2>
                     <p id="contact-content"> Please fill in your information below:</p>
@@ -81,9 +81,12 @@
                 <input type="text" id="email-address" name="email-address"placeholder="john.smith@email.com"/>
             <br>
                 <label for="message">Message:<br></label>
-                <input type="text" id="message" name="message" placeholder="max 500 characters"/>
+                <input type="text" id="message" maxlength="10" name="message" placeholder="max 10 characters"/>
             <br/> 
             <input type='submit' value='submit'>
+            <div id="customAlert">
+                <p id="alertMessage"></p>
+            </div>
         
         </div>
     </main>
@@ -96,7 +99,8 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </footer>
-    <!-- <script src="jsfilehere"></script> -->
+    <script src="/scripts/about.js"></script>
+
 </body>
 <link>
 </html>
