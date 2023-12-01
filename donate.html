@@ -18,65 +18,76 @@
         </div>
     </header>
     <main>
-        <!--facts section-->
-
-        <!--working on adding images-->
-        <img src="assets/elephantp1.jpg" alt= "fact1"> 
-        <h3>insert fact 1 </h3> 
-
-        <img src="assets/elephantp2.jpg" alt="fact2">
-        <h3>insert fact 2 </h3> 
-
-        <img src="assets/elephantp3.jpg" alt="fact3">
-        <h3>insert fact 3 </h3> 
-
-        <img src="assets/elephant4.jpg" alt="fact4">
-        <h3>insert fact 4 </h3> 
-
-        
-        <!-- Add your main content here -->
-        <form id="userForm">
-            <h2> DONATION INFORMATION </h2>
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-            <label for="cpassword">Confirm Password:</label><br>
-            <input type="password" id="cpassword" name="cpassword"><br>
+        <div class="container">
+            <div class="hero">
+                <h1>Donate</h1>
             </div>
-            <h3>Please select donation type:</h3>
-            <input type="button" value="Select Amount" onclick="Increment()" >
-            <input type="button" value="Custom Amount" onclick="Custom()" >
-            <input type="button" value="Monthly Donation" onclick="Monthly()" ><br>
-            <input type="submit" value="Submit">
-            </form>
-    <div id="payment-information">
-            <form>
-                <h2> PAYMENT </h2>
-                <!--credit card and debit card info-->
-                <button type="button">Credit/Debit Card</button>
-
-                <label for="cardNumber"> Card Number:</label>
-                <input type="text" id="cardNumber" name="Card Number" placeholder="Enter Card Number Information" required>
-
-                <label for="CVC">CVC:</label>
-                <input type="text" id="CVC" name="CVC" placeholder="Type CVC" required>
-                
-                <input type="button" value="Submit">
-                
-                <!-- Pay pal info-->
-                <button type="button">PayPal </button>
-                <input type="checkbox" id="security1" name="
-                security1" value="safe">
-                <label for="security1"> Save this information securely </label>
-                
-                <input type="button" value="Confirm">
-
-            </form>
+            <p id="intro">Your donations to the 2023 Year End Campaign will help us provide individualized care to all Sanctuary elephants, including the elements of a nutritious diet, as well as our educational programming that reaches far beyond The Sanctuary habitats.</p>
+            <div class="circles">
+                <div class="circle">
+                    <img src="/assets/donate1.png" alt="Circle Image" width="200px" height="auto">
+                    <p>$50 Elephant Care Supplies</p>
+                </div>
+                <div class="circle">
+                    <img src="/assets/donate2.png" alt="Circle Image"width="200px" height="auto">
+                    <p>$100 Educational Outreach</p>
+                </div>
+                <div class="circle">
+                    <img src="assets/donate3.png" alt="Circle Image"width="200px" height="auto">
+                    <p>$300 ATV tires</p>
+                </div>
+                <div class="circle">
+                    <img src="/assets/donate4.png" alt="Circle Image"width="200px" height="auto">
+                    <p>$1000 weekly food supply</p>
+                </div>
+                <div class="circle">
+                    <img src="/assets/donate5.png" alt="Circle Image"width="200px" height="auto">
+                    <p>$1500 weekly hay supply</p>
+                </div>
+            </div>
+        <div class="forms-aside-container">
+            <div class="forms">
+                <form id="userForm">
+                    <h2> DONATION INFORMATION </h2>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <h3>Please select donation type:</h3>
+                    <input type="button" value="Select Amount" onclick="Increment()" >
+                    <input type="button" value="Custom Amount" onclick="Custom()" >
+                    <input type="button" value="Monthly Donation" onclick="Monthly()" ><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <form id="payment-information">
+                    <h2> PAYMENT </h2>
+                    <label for="cardNumber"> Card Number:</label><br>
+                    <input type="text" id="cardNumber" name="Card Number" placeholder="Enter Card Number Information" required><br>
+                    <label for="CVC">CVC:</label><br>
+                    <input type="text" id="CVC" name="CVC" placeholder="Type CVC" required><br>
+                    <input type="checkbox" id="security1" name="security1" value="safe">
+                    <label for="security1"> Save this information securely </label><br>
+                    <input type="button" value="Confirm">
+                </form>
+        </div>
+        <div class="aside">
+            <aside>
+                <h2>Contact Information</h2>
+                <p>Email elephant@elephants.com</P>
+                <p>Telephone 931.796.6500</p>
+                <p>Fax 931.796.1360 </p>
+                <p>Address PO Box 393 Hohenwald, TN 38462</p>
+            </aside>
+            </div>
+        </div>
+        <div class="finance">
+            <h2>Financial Campaign</h2>
+            <p>The best care is a commitment at The Elephant Sanctuary, with our integrated Veterinary and Husbandry Teams dedicated to meeting the complex needs of each individual elephant.</p>
+            <button>Download Now</button>
+        </div>
+            </div>
         </div>
     </main>
     <footer>
