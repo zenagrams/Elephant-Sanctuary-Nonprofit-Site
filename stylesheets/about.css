@@ -28,7 +28,7 @@ p{
 }
 
 .about-hero{
-    background-image: url(../assets/about-hero.png);
+    background-image: url('../assets/about-hero.png');
     display:flex;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -113,13 +113,13 @@ p{
 }
 
 #box1{
-    background-image: url(/assets/elephantcare.jpg);
+    background-image: url('../assets/elephantcare.jpg');
 }
 #box2{
-    background-image: url(/assets/virtuallearning.jpg);
+    background-image: url('../assets/virtuallearning.jpg');
 }
 #box3{
-    background-image: url(/assets/discoverycenter.jpg);
+    background-image: url('../assets/discoverycenter.jpg');
 }
 #contact-content{
     margin-right: 0;
