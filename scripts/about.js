@@ -5,7 +5,7 @@ e.preventDefault();
 let fullname = document.getElementById("fullname");
 let email = document.getElementById("email-address");
 let message = document.getElementById("message");
-let emailRegex = /\S+@\S+\.\S+/;
+let emailRegex = /\S+@\S+\.\S+/;//regular expression in javascript that looks for a phrase that has a nonwhitespace character@nonwhitespacechar.
 
 if (fullname.value=="") {
     document.getElementById("alertMessage").innerText = "Error: Do not leave empty";
