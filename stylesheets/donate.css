@@ -29,7 +29,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/assets/donatehero.jpg');
+    background-image: url('../assets/donatehero.jpg');
     background-size: cover;
 }
 .aside{

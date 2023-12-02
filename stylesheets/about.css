@@ -28,7 +28,7 @@ p{
 }
 
 .about-hero{
-    background-image: url(/assets/about-hero.png);
+    background-image: url(../assets/about-hero.png);
     display:flex;
     padding-top: 3rem;
     padding-bottom: 3rem;
